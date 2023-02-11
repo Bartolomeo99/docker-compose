@@ -81,26 +81,26 @@ WSGI_APPLICATION = 'Ejedzenie.wsgi.application'
 #         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'db_django',
-#         'USER': 'db_user',
-#         'PASSWORD': 'my_secret_password',
-#         'HOST': 'db',
-#         'PORT': '5432',
-#     }
-# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': os.environ.get('MYSQL_DATABASE', 'mysql-db'),
-        'USER': os.environ.get('MYSQL_USER', 'mysql-user'),
-        'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'mysql-password'),
-        'HOST': os.environ.get('MYSQL_DATABASE_HOST', 'db'),
-        'PORT': os.environ.get('MYSQL_DATABASE_PORT', 3306),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': '5432',
     }
 }
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': os.environ.get('MYSQL_DATABASE', 'mysql-db'),
+#         'USER': os.environ.get('MYSQL_USER', 'mysql-user'),
+#         'PASSWORD': os.environ.get('MYSQL_PASSWORD', 'mysql-password'),
+#         'HOST': os.environ.get('MYSQL_DATABASE_HOST', 'db'),
+#         'PORT': os.environ.get('MYSQL_DATABASE_PORT', 3306),
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
