@@ -11,6 +11,7 @@ Run in this directory to build and run the app:
           docker-compose up -d --build
 
 The Ejedzenie app will be running at http://localhost:8000
+
 Run this command to migrate db
         
          docker-compose run --rm web python manage.py migrate
